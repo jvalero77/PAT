@@ -1,4 +1,5 @@
   
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,52 +14,7 @@
   	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <style>
-                header,footer{
-
-              background-color: #0076a8;
-              text-align: center;
-              font-size: 30px;
-              padding-top: .75rem;
-                padding-bottom: .75rem;
-
-            }
-
-            p,h2{
-              text-align: center;
-              padding-top: .75rem;
-                padding-bottom: .75rem;
-            }
-            .top,.low,.infotext{
-              text-align: left;
-              font-size: 20px;
-              font-family: "Lucida Console", "Courier New", monospace;
-              padding-top: .75rem;
-                padding-bottom: .75rem;
-
-            }
-
-            .title{
-              padding-top: .75rem;
-              font-family: 'Rubik', sans-serif;
-              font-size: 30px;
-            }
-            .undertitle,.overform{
-              padding-top: .75rem;
-                padding-bottom: .80rem;
-                outline-style: solid;
-                font-family: 'Noto Sans JP', sans-serif;
-                outline-color: #0076a8;
-                outline-width: .3rem;
-
-            }
-
-
-            .formulario{
-              padding-right: .75rem;
-                padding-left: .75rem;
-            }
-    </style>
+   
 </head>
 <body>
 
@@ -67,22 +23,27 @@
 </header>
 
 <div class="top">
-		<div class= "container px-4">
+		<div class= "container">
 			<div class= "row">
-				<div class= "col-5">
-					
-				        Los mejores conciertos a tu alcance
-					
+				<div class= "col-sm-5" style= "padding-top:13px" id="prueba">
+					   
+				        Busca tu artista favorito
+					    
 			    </div>
+			   <!--"btn btn-outline-success"-->
 			    <div class= "col-sm">
+
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">			  
-						      <form class="d-flex">
-						        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar grupo">
-						        <button class="btn btn-outline-success" type="submit">Buscar</button>
+						      <form class="d-flex" id="formBuscar">
+						        <input class="form-control me-2" id="inputBuscar"  placeholder="pej, Coldplay ..." aria-label="Buscar grupo">
+						        <button id="btnBuscar" class="btn btn-outline-success" type="submit">Buscar</button>
 						      </form>  				
 	  				</nav>
+	  				
+	  				
 				</div>	
-				<div class = "col-3 gy-2">
+				 
+				<div class = "col-sm-3 gy-2">
 					    
 							<div class="dropdown">
 							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,10 +62,33 @@
 
 	    </div>
 	</div>
+	<div class= "infoartista" id="infoartista">
+		<div class = "container">
+			<div class="row gy-5">
+				<div class="col-sm-6">
+						<dl>
+					  <dt>Nombre:</dt>
+					  <dd>- black hot drink</dd>
+					  <dt>Formado en:</dt>
+					  <dd>- white cold drink</dd>
+					  <dt>Género musical:</dt>
+					  <dd>- white cold drink</dd>
+					  <dt>Originario de:</dt>
+					  <dd>- white cold drink</dd>
+					</dl>
+				</div>
+				<div class="col-sm-6">
+					<div class="p-5">
+	    			<img src="http://www.popelera.net/wp-content/uploads/2016/09/concierto-madrid.jpg" class= "img-thumbnail" width="300" height="250" alt= "concert1">
+	    		    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class= "undertitle">
-		<div class= "container px-4 ">
+		<div class= "container" style= "padding-top:25px">
 			<div class = "row gy-5">
-				<div class = "col">					
+				<div class = "col-sm">					
 						<h2> ¿Qué somos? </h2>
 			       		<p> Somos una empresa encargada de organizar <u>festivales de música</u> por todo el mundo </p>
 			       		<p> Contamos con más de 20 años de experiencia en organización de eventos</p>
@@ -206,7 +190,7 @@
 			 </div>							
 			</div>
 			<div class = "row">       				
-	    		<div class = "col gy-20">		
+	    		<div class = "col gy-15">		
 	    					<div class="card" style="width: 18rem;">
 		  								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQ3dk6kyNniXv2ah0My4Z5213UvbyG1aJ7Q&usqp=CAU" class="card-img-top" alt="Glastonbury2019" width="300" height="250">
 		  							    <div class="card-body">
@@ -216,7 +200,7 @@
 		 						 </div>
 							</div>			
 			    </div>
-			    <div class = "col gy-20">		
+			    <div class = "col gy-15">		
 	    					<div class="card" style="width: 18rem;">
 		  								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40u7dvrlFXitETTcP1NbAxKJv_zi4Dg2ffw&usqp=CAU" class="card-img-top" alt="Barcelona2018"width="300" height="250">
 		  							    <div class="card-body">
@@ -226,7 +210,7 @@
 		 						 </div>
 							</div>			
 			    </div>
-			    <div class= "col-2 "> </div>
+			
 			    <div class= "col-4" class="box">
 	       				<h2> Últimos eventos </h2>
 	       				<p> Puedes consultar algunos reportajes realizados sobres los últimos eventos organizados </p>
@@ -249,20 +233,20 @@
 					<div class = "formulario">
 						<form class="row g-3">
 							  <div class="col-md-6">
-							    <label for="inputNombrel4" class="form-label">Nombre</label>
-							    <input type="email" class="form-control" id="inputEmail4">
+							    <label for="inputNombre" class="form-label">Nombre</label>
+							    <input type="email" class="form-control" id="inputNombreForm">
 							  </div>
 							  <div class="col-md-6">
-							    <label for="inputApellidos4" class="form-label">Apellidos</label>
-							    <input type="password" class="form-control" id="inputPassword4">
+							    <label for="inputApellidos" class="form-label">Apellidos</label>
+							    <input type="password" class="form-control" id="inputApellidosForm">
 							  </div>
 							  <div class="col-md-6">
-							    <label for="inputEmail4" class="form-label">Email</label>
-							    <input type="email" class="form-control" id="inputEmail4">
+							    <label for="inputEmail" class="form-label">Email</label>
+							    <input type="email" class="form-control" id="inputEmailForm">
 							  </div>
 							  <div class="col-md-6">
-							    <label for="inputPassword4" class="form-label">Contraseña</label>
-							    <input type="password" class="form-control" id="inputPassword4">
+							    <label for="inputPassword" class="form-label">Contraseña</label>
+							    <input type="password" class="form-control" id="inputPasswordForm">
 							  </div>
 							  
 							  <div class="col-md-4">
@@ -281,7 +265,7 @@
 							    </div>
 							  </div>
 							  <div class="col-12">
-							    <button type="submit" class="btn btn-primary">Registrarse</button>
+							    <button type="submit" class="btn btn-primary" id="btnRegisterForm">Registrarse</button>
 							  </div>
 					    </form>
 				    </div>
@@ -292,6 +276,7 @@
 	<footer>
 		<p><em>Todos los derechos reservados para OrganMusic Company</em></p>
     </footer>
-
+    
 </body>
+ <script src="script.js"></script>
 </html>
